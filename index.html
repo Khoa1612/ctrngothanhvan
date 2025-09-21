@@ -1284,7 +1284,7 @@
             const thumbnailNav = $('#thumbnailNav');
 
             // Initialize main display
-            updateMainGalleryDisplay();
+            // updateMainGalleryDisplay();
             $('#mainPrevBtn').addEventListener('click', (e) => { e.stopPropagation(); goToPrevMainImage(); }); // Stop propagation to prevent TV power
             $('#mainNextBtn').addEventListener('click', (e) => { e.stopPropagation(); goToNextMainImage(); }); // Stop propagation to prevent TV power
             $('#mainGalleryDisplay').addEventListener('click', (e) => {
@@ -1385,7 +1385,7 @@
         // TV Power Button functionality
         const tvScreen = $('#mainGalleryDisplay');
         const tvPowerButton = $('#tvPowerButton');
-        let isTvOn = true;
+        let isTvOn = false;
 
         tvPowerButton.addEventListener('click', () => {
             if (isTvOn) {
@@ -1497,3 +1497,4 @@
     </script>
 </body>
 </html>
+
